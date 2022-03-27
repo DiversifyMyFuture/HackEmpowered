@@ -20,10 +20,9 @@
     <span style="color: #872505; position: absolute;top: 20px;left: 45px;font-size:60px;cursor:pointer" onclick="openNav()" >&#9776;</span>
     <img src="stars.png" id="stars">
     <img src="sun.png" id="sun">
-    <img src="" id="mountain_behind">
     <h2 id="text" style="margin-left: 1600px;">Diversify My Future</h2>
     <a href="#sec" id="btn" style="margin-left: 950px;">About Us</a>
-    <img src="930.png" id="mountain_front">
+    <img src="930.png" id="trees">
 
 </section>
 <div class="sec" id="sec">
@@ -32,7 +31,6 @@
     <br>
     <br>
     <br>
-
     <h3 style="text-align:center">About Us</h3>
     <br>
     <br>
@@ -47,31 +45,29 @@
 <script>
     let stars = document.getElementById('stars');
     let sun = document.getElementById('sun');
-    let mountain_behind = document.getElementById('mountain_behind');
     let text = document.getElementById('text');
     let btn = document.getElementById('btn');
-    let mountain_front = document.getElementById('mountain_front');
+    let trees = document.getElementById('trees');
     let header = document.querySelector('header');
 
     window.addEventListener('scroll', function(){
         let value = window.scrollY;
         stars.style.left = value * 0.25 + 'px';
         sun.style.top = value * 1.05 + 'px';
-        mountain_behind.style.top = value * 0.5 + 'px';
-        mountain_front.style.top = value * 0 + 'px';
+        trees.style.top = value * 0.5 + 'px';
         text.style.marginRight = value * 4 + 'px';
         btn.style.marginTop = value * 1.5 + 'px';
         header.style.top = value * 0.5 + 'px';
     })
 </script>
 <script>
-function openNav() {
-document.getElementById("myNav").style.width = "100%";
-}
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
 
-function closeNav() {
-document.getElementById("myNav").style.width = "0%";
-}
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
 </script>
 </body>
 </html>
